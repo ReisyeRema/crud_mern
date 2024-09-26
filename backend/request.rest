@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/66eece7e733d52a44f75441d
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Hafif",
+    "email" : "hafif@gmail.com",
+    "gender" : "Male"
+}
+
+###
+PATCH http://localhost:5000/users/66eece7e733d52a44f75441d
+Content-Type: application/json
+
+{
+    "name" : "Hafif Saputra",
+    "email" : "hafifsaputra@gmail.com",
+    "gender" : "Male"
+}
+
+###
+DELETE http://localhost:5000/users/66eece7e733d52a44f75441d
